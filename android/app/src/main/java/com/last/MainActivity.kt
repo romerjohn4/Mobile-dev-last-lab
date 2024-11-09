@@ -1,7 +1,7 @@
 package com.last
 
-import android.os.Build
 import android.os.Bundle
+import android.os.Build
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
@@ -57,5 +57,8 @@ class MainActivity : ReactActivity() {
       // Use the default back button implementation on Android S
       // because it's doing more than [Activity.moveTaskToBack] in fact.
       super.invokeDefaultOnBackPressed()
+  }
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(null)
   }
 }
